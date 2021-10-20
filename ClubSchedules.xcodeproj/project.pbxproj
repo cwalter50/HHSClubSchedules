@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,13 @@
 		38CB2AB5271F2993004D23E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38CB2AB3271F2993004D23E2 /* LaunchScreen.storyboard */; };
 		38CB2AC0271F2994004D23E2 /* ClubSchedulesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CB2ABF271F2994004D23E2 /* ClubSchedulesTests.swift */; };
 		38CB2ACB271F2994004D23E2 /* ClubSchedulesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CB2ACA271F2994004D23E2 /* ClubSchedulesUITests.swift */; };
+		38CB2ADA271F2A4C004D23E2 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 38CB2AD9271F2A4C004D23E2 /* FirebaseFunctions */; };
+		38CB2ADC271F2A4C004D23E2 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 38CB2ADB271F2A4C004D23E2 /* FirebaseAnalytics */; };
+		38CB2ADE271F2A4C004D23E2 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 38CB2ADD271F2A4C004D23E2 /* FirebaseCrashlytics */; };
+		38CB2AE0271F2A4C004D23E2 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 38CB2ADF271F2A4C004D23E2 /* FirebaseStorage */; };
+		38CB2AE2271F2A4C004D23E2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 38CB2AE1271F2A4C004D23E2 /* FirebaseAuth */; };
+		38CB2AE4271F2A4C004D23E2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 38CB2AE3271F2A4C004D23E2 /* FirebaseFirestore */; };
+		38CB2AE6271F2B67004D23E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38CB2AE5271F2B67004D23E2 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,7 @@
 		38CB2AC6271F2994004D23E2 /* ClubSchedulesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClubSchedulesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38CB2ACA271F2994004D23E2 /* ClubSchedulesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubSchedulesUITests.swift; sourceTree = "<group>"; };
 		38CB2ACC271F2994004D23E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38CB2AE5271F2B67004D23E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38CB2ADE271F2A4C004D23E2 /* FirebaseCrashlytics in Frameworks */,
+				38CB2AE2271F2A4C004D23E2 /* FirebaseAuth in Frameworks */,
+				38CB2AE0271F2A4C004D23E2 /* FirebaseStorage in Frameworks */,
+				38CB2ADC271F2A4C004D23E2 /* FirebaseAnalytics in Frameworks */,
+				38CB2ADA271F2A4C004D23E2 /* FirebaseFunctions in Frameworks */,
+				38CB2AE4271F2A4C004D23E2 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +122,7 @@
 				38CB2AB1271F2993004D23E2 /* Assets.xcassets */,
 				38CB2AB3271F2993004D23E2 /* LaunchScreen.storyboard */,
 				38CB2AB6271F2993004D23E2 /* Info.plist */,
+				38CB2AE5271F2B67004D23E2 /* GoogleService-Info.plist */,
 				38CB2AAE271F2991004D23E2 /* ClubSchedules.xcdatamodeld */,
 			);
 			path = ClubSchedules;
@@ -147,6 +162,14 @@
 			dependencies = (
 			);
 			name = ClubSchedules;
+			packageProductDependencies = (
+				38CB2AD9271F2A4C004D23E2 /* FirebaseFunctions */,
+				38CB2ADB271F2A4C004D23E2 /* FirebaseAnalytics */,
+				38CB2ADD271F2A4C004D23E2 /* FirebaseCrashlytics */,
+				38CB2ADF271F2A4C004D23E2 /* FirebaseStorage */,
+				38CB2AE1271F2A4C004D23E2 /* FirebaseAuth */,
+				38CB2AE3271F2A4C004D23E2 /* FirebaseFirestore */,
+			);
 			productName = ClubSchedules;
 			productReference = 38CB2AA2271F2991004D23E2 /* ClubSchedules.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +241,9 @@
 				Base,
 			);
 			mainGroup = 38CB2A99271F2991004D23E2;
+			packageReferences = (
+				38CB2AD8271F2A4C004D23E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 38CB2AA3271F2991004D23E2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -235,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38CB2AB5271F2993004D23E2 /* LaunchScreen.storyboard in Resources */,
+				38CB2AE6271F2B67004D23E2 /* GoogleService-Info.plist in Resources */,
 				38CB2AB2271F2993004D23E2 /* Assets.xcassets in Resources */,
 				38CB2AAD271F2991004D23E2 /* Main.storyboard in Resources */,
 			);
@@ -370,7 +397,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -425,7 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -447,7 +474,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.DocsApps.ClubSchedules;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HHSApps.ClubSchedules;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -466,7 +493,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.DocsApps.ClubSchedules;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HHSApps.ClubSchedules;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -597,6 +624,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		38CB2AD8271F2A4C004D23E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		38CB2AD9271F2A4C004D23E2 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38CB2AD8271F2A4C004D23E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		38CB2ADB271F2A4C004D23E2 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38CB2AD8271F2A4C004D23E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		38CB2ADD271F2A4C004D23E2 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38CB2AD8271F2A4C004D23E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		38CB2ADF271F2A4C004D23E2 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38CB2AD8271F2A4C004D23E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		38CB2AE1271F2A4C004D23E2 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38CB2AD8271F2A4C004D23E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		38CB2AE3271F2A4C004D23E2 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38CB2AD8271F2A4C004D23E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		38CB2AAE271F2991004D23E2 /* ClubSchedules.xcdatamodeld */ = {
